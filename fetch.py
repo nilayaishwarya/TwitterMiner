@@ -3,7 +3,7 @@ import json
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
-
+# test
 def process_or_store(tweet):
     with open('data.json', 'w') as outfile:
       x = json.dumps(tweet)
@@ -28,7 +28,7 @@ class MyListener(StreamListener):
  
     def on_data(self, data):
         try:
-            with open('Iphone.json', 'a') as f:
+            with open('iphone.json', 'a') as f:
                 f.write(data)
                 return True
         except BaseException as e:
