@@ -1,0 +1,220 @@
+{
+  "axes": [
+    {
+      "scale": "x",
+      "type": "x"
+    },
+    {
+      "scale": "y",
+      "type": "y"
+    }
+  ],
+  "data": [
+    {
+      "name": "table",
+      "values": [
+        {
+          "col": "data",
+          "idx": "Madrid",
+          "val": 587
+        },
+        {
+          "col": "data",
+          "idx": "El",
+          "val": 549
+        },
+        {
+          "col": "data",
+          "idx": "Real",
+          "val": 542
+        },
+        {
+          "col": "data",
+          "idx": "Zambo",
+          "val": 279
+        },
+        {
+          "col": "data",
+          "idx": "Carvajal",
+          "val": 275
+        },
+        {
+          "col": "data",
+          "idx": "Anguissa",
+          "val": 270
+        },
+        {
+          "col": "data",
+          "idx": "Daniel",
+          "val": 262
+        },
+        {
+          "col": "data",
+          "idx": "Quand",
+          "val": 258
+        },
+        {
+          "col": "data",
+          "idx": "envoie",
+          "val": 257
+        },
+        {
+          "col": "data",
+          "idx": "valser",
+          "val": 257
+        },
+        {
+          "col": "data",
+          "idx": "https://t.co/KuxuwmEulr",
+          "val": 257
+        },
+        {
+          "col": "data",
+          "idx": "Sevilla",
+          "val": 221
+        },
+        {
+          "col": "data",
+          "idx": "https",
+          "val": 214
+        },
+        {
+          "col": "data",
+          "idx": "meilleurs",
+          "val": 199
+        },
+        {
+          "col": "data",
+          "idx": "jugador",
+          "val": 194
+        },
+        {
+          "col": "data",
+          "idx": "Hern",
+          "val": 185
+        },
+        {
+          "col": "data",
+          "idx": "Javier",
+          "val": 179
+        },
+        {
+          "col": "data",
+          "idx": "mercado",
+          "val": 178
+        },
+        {
+          "col": "data",
+          "idx": "Eibar",
+          "val": 176
+        },
+        {
+          "col": "data",
+          "idx": "nuevo",
+          "val": 176
+        }
+      ]
+    },
+    {
+      "name": "stats",
+      "source": "table",
+      "transform": [
+        {
+          "keys": [
+            "data.idx"
+          ],
+          "type": "facet"
+        },
+        {
+          "type": "stats",
+          "value": "data.val"
+        }
+      ]
+    }
+  ],
+  "height": 500,
+  "legends": [],
+  "marks": [
+    {
+      "from": {
+        "data": "table",
+        "transform": [
+          {
+            "keys": [
+              "data.col"
+            ],
+            "type": "facet"
+          },
+          {
+            "height": "data.val",
+            "point": "data.idx",
+            "type": "stack"
+          }
+        ]
+      },
+      "marks": [
+        {
+          "properties": {
+            "enter": {
+              "fill": {
+                "field": "data.col",
+                "scale": "color"
+              },
+              "width": {
+                "band": true,
+                "offset": -1,
+                "scale": "x"
+              },
+              "x": {
+                "field": "data.idx",
+                "scale": "x"
+              },
+              "y": {
+                "field": "y",
+                "scale": "y"
+              },
+              "y2": {
+                "field": "y2",
+                "scale": "y"
+              }
+            }
+          },
+          "type": "rect"
+        }
+      ],
+      "type": "group"
+    }
+  ],
+  "padding": "auto",
+  "scales": [
+    {
+      "domain": {
+        "data": "table",
+        "field": "data.idx"
+      },
+      "name": "x",
+      "range": "width",
+      "type": "ordinal",
+      "zero": false
+    },
+    {
+      "domain": {
+        "data": "stats",
+        "field": "sum"
+      },
+      "name": "y",
+      "nice": true,
+      "range": "height"
+    },
+    {
+      "domain": {
+        "data": "table",
+        "field": "data.col"
+      },
+      "name": "color",
+      "range": "category20",
+      "type": "ordinal"
+    }
+  ],
+  "width": 960
+}
