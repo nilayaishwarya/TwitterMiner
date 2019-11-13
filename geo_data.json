@@ -42,6 +42,20 @@
                 "text": "The iPhone 11\n#iphone #iphone11 #appleiphone11 @ Renovatech Smartphone &amp; Device Repair https://t.co/BDhluXVySD",
                 "created_at": "Thu Sep 12 19:28:07 +0000 2019"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1683,
+                    41.3894
+                ]
+            },
+            "properties": {
+                "text": "Una nueva generaci\u00f3n de fundas y accesorios para iPhone 11, iPhone 11 Pro y iPhone 11 Pro Max.  Con la billetera pr\u2026 https://t.co/raYdloNiNb",
+                "created_at": "Fri Sep 13 19:51:36 +0000 2019"
+            }
         }
     ]
 }
