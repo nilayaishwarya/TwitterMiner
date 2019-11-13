@@ -1,5 +1,5 @@
-This application is capable of gathering tweets based on hashtags and using the tweets capable of analysing sentiments amongst people about a topic.
-It is also capable of visually displaying the trends amongst tweets.
+This application is capable of gathering tweets based on hashtags and using the tweets to analyse sentiments amongst people about a topic.
+It is also capable of visually displaying the trends in tweets.
 
 The application utilizes following:-
 1)Twitter API
