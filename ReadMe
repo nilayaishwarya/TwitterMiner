@@ -1,0 +1,9 @@
+This application is capable of gathering tweets based on hashtags and using the tweets capable of analysing sentiments amongst people about a topic.
+It is also capable of visually displaying the trends amongst tweets.
+
+The application utilizes following:-
+1)Twitter API
+2)Tweepy Framework
+3)Natural Language Processing
+4)Leaflet.js
+5)Basic HTML
